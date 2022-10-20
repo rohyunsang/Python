@@ -1,0 +1,14 @@
+# color
+import tkinter
+
+
+from tkinter import *
+
+window = Tk()
+button = Button(window,text="버튼을 클릭하세요?")
+button.pack()
+button["fg"] = "yellow"
+button["bg"] = "green"
+
+# another method :  button["fg"] = "#ff0000"
+

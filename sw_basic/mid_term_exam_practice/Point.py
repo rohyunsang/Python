@@ -1,3 +1,6 @@
+from typing import Counter
+
+
 class Point:
     def __init__(self,x,y):
         self.x = x
@@ -27,3 +30,7 @@ p = Point(3,5)
 q = Point(5,3)
 mid = p.halfway(q) # instanciate object mid 
     
+
+
+# a = Counter() => Counter.__init__(a)
+

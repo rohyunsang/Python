@@ -8,15 +8,26 @@ def trace(func):
         print(func.__name__,'함수 끝')
     return wrapper # not wrapper() 파이썬에서 func return 할때 () 붙이지 않는다.
 
+#def hello():
+#    print('hello')
+
+#def world():
+#    print('world')
+
+#trace_hello = trace(hello)
+#trace_world = trace(world)
+
+#trace_hello()
+#trace_world()
+
+@trace
 def hello():
     print('hello')
 
+@trace 
 def world():
     print('world')
 
-trace_hello = trace(hello)
-trace_world = trace(world)
-
-trace_hello()
-trace_world()
+hello()
+world()
 

@@ -1,14 +1,20 @@
 def decorator1(func):
-    def wrapper():
-        print('decorator1')
+    def wrap():
+        print(func.__name__,'decorator1')
         func()
-    return wrapper
+    return wrap 
 
 def decorator2(func):
-    def wrapper():
-        print('decorator2')
+    def wrap():
+        print(func.__name__,'decorator2')
         func()
-    return wrapper
+    return wrap
 
 @decorator1
 @decorator2
+def hello():
+    print ('hello')
+
+hello()
+
+

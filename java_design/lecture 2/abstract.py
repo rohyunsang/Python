@@ -24,7 +24,7 @@ class Student(StudentBase):
 # -> 추상 메서드도 호출할 일 없음
 # -> 추상 메서드도 내부 pass만 작성 
 
-class AbstractCountry(metaclass =ABCMeta):
+class AbstractCountry(metaclass = ABCMeta):
     name = '국가명'
     population = '인구'
     captial = '수도'
@@ -37,7 +37,7 @@ a = AbstractCountry()
 
 a.show() # 추상 클래스라 하더라도 추상 메소드가 없으면 기본적인 클래스 기능은 동작(객체 생성 가능)
 
-class Animal(metaclass=AMCMeta):
+class Animal(metaclass = AMCMeta):
     @abstractmethod
     def do_say(self):
         pass

@@ -26,7 +26,7 @@ a = Polygon(50,3)
 b = Polygon(10,5)
 
 print(a)
-print('면적',a.area())
+print('면적',a.area()) 
 print('내각',a.internal_angle())
 print()
 print(b)

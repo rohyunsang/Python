@@ -35,7 +35,17 @@ class WizardAdapter(Fighter):
         self.wizard.portal()
 
 
-
-
 class Wizard:
     def shot_fire_ball(self):
+        print("빠이어뽈 발싸!!")
+
+    def shield(self):
+        print('주변에 보호막 씌우기')
+
+    def portal(self):
+        print('포탈 열고 이동')
+
+wizard = WizardAdapter(Wizard())
+wizard.attack()
+wizard.defend()
+wizard.escape()

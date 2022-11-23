@@ -4,7 +4,7 @@ class Polygon:
         self.sides = [0 for i in range(no_of_size)]
 
     def inputSides(self):
-        self.sides = [float(input("Enter side " +str(i+1)+":")) for i in range (self.n)]
+        self.sides = [float(input("Enter side " ,str(i+1)+":")) for i in range (self.n)]
         
     def dispSides(self):
         for i in range(self.n):

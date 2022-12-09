@@ -81,6 +81,9 @@ class DKU:
     def __repr__(self):
         return 'DKU()'
 
+print(a) # repr 호출
+print(a[0]) # str 호출
+
 #iter
 class MultipleOfN:
     def __init__(self,n,stop):
@@ -99,6 +102,37 @@ class MultipleOfN:
             self.current = num
             return self.current 
 
+#iter 2
+class PowTwo:
+    def __init__(self,max = 0):
+        self.max = max
+    
+    def __iter__(self):
+        self.n = 0
+        return self
+
+    def __next__(self):
+        if self.n <= self.max:
+            result = 2 ** self.n
+            self.n += 1
+            return result 
+        else :
+            raise StopIteration
+
+a = PowTwo(4)
+i = iter(a)
+print(next(i))
+print(next(i))
+print(next(i))
+print(next(i))
+print(next(i))
+
+for i in PowTwo(4):
+    print(i)
+
+
+
+
 #gene
 def MultipleOfN(n,stop):
     num = n 
@@ -106,9 +140,16 @@ def MultipleOfN(n,stop):
         yield num 
         num += n
 
-g = MutipleOfN(4,30)
+g = MultipleOfN(4,30)
 for i in g:
     print( i ,end='')
 print()
-for i in MutipleOfN(3,40):
+for i in MultipleOfN(3,40):
     print(i,end='')
+
+
+
+# 상속할때 까먹지 말기
+import Bird
+from Bird import Parrot
+from Bird import Penguin

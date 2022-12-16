@@ -10,3 +10,5 @@ for i in g:
 print()
 for i in MultipleOfN(2,40):
     print(i,end=' ')
+
+    

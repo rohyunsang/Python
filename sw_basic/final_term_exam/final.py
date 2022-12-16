@@ -74,6 +74,7 @@ print("the total terms are",term)
 for i in range(term):
     print("2 raised to power ",i,"is",result[i])
 
+
 repr()에 의해 호출 된 인스턴스를 재 생성하는 데
 사용할 수 있는 공식 문자열(formal string)을 리턴
 __str__() : For str(), print(), format() built-in function 객체를 문자열화
@@ -132,7 +133,7 @@ for i in PowTwo(4):
 
 
 
-
+ 
 #gene
 def MultipleOfN(n,stop):
     num = n 
